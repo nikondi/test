@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+body,
+html {
+    height: 100%;
+}
+.form-wrapper {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    overflow: auto;
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+}
+.form-content {
+    background-color: #ffffff;
+    padding: 33px 15px 65px 15px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    min-width: 400px;
+}
+.form {
+    width: 100%;
+    max-width: 496px;
+    box-sizing: border-box;
+}
+.form:not(.active) {
+    display: none;
+}
+.form-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 52px;
+}
+.form-label {
+    display: block;
+    margin-bottom: 32px;
+    position: relative;
+}
+.form-label .show-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: block;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/icons/eye-open.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+.form-label .show-password.active {
+    background-image: url("../img/icons/eye-close.svg");
+}
+.form-label .inner-error {
+    position: absolute;
+    top: 50px;
+    color: #ff3a65;
+    font-size: 14px;
+    left: 0;
+}
+.form-label-placeholder {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    font-weight: 500;
+    font-size: 20px;
+    color: #AEAEAE;
+    cursor: text;
+    transition: .3s all;
+}
+.form-input:focus + .form-label-placeholder,
+.form-input:valid + .form-label-placeholder {
+    font-size: 12px;
+    top: 1px;
+    transform: translateY(0);
+}
+.form-input {
+    display: block;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    font-weight: 500;
+    box-sizing: border-box;
+    padding: 15px 12px 10px 12px;
+    outline: none;
+    height: 48px;
+    width: 100%;
+    transition: .3s border-color;
+    font-size: 20px;
+}
+.form-input:focus {
+    border-color: #E74266;
+}
+.form-input.error {
+    border-color: #ff1445;
+}
+.form-button {
+    margin-top: 32px;
+    display: block;
+    background-color: #E74266;
+    color: #ffffff;
+    border: 0;
+    border-radius: 30px;
+    width: 100%;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .2s background-color;
+}
+.form-button:hover {
+    background-color: #c42e4f;
+}
+
+
+.form-button.logout {
+    margin-top: 160px;
+    margin-bottom: 14px;
+}

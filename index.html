@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="form-wrapper">
+    <div class="form-content">
+
+        <form action="" class="form form-reg active" novalidate>
+            <h1 class="form-title">Регистрация</h1>
+            <label class="form-label">
+                <input type="text" class="form-input" id="form-input-login" required>
+                <span class="form-label-placeholder">Логин</span>
+            </label>
+            <label class="form-label">
+                <input type="text" class="form-input" id="form-input-email" required>
+                <span class="form-label-placeholder">Email</span>
+            </label>
+            <label class="form-label">
+                <input type="text" class="form-input" id="form-input-phone" required>
+                <span class="form-label-placeholder">Телефон</span>
+            </label>
+            <label class="form-label">
+                <input type="password" class="form-input form-input-password" id="form-input-password" required>
+                <span class="form-label-placeholder">Пароль</span>
+                <span class="show-password"></span>
+            </label>
+            <label class="form-label">
+                <input type="password" name="password2" class="form-input form-input-password" id="form-input-password2" required>
+                <span class="form-label-placeholder">Подтверждение пароля</span>
+                <span class="show-password"></span>
+            </label>
+            <button class="form-button submit" type="submit">Зарегистрироваться</button>
+        </form>
+        <div class="main form">
+            <h1 class="form-title">Здравствуйте, <span class="user-login"></span></h1>
+            <button class="form-button logout" type="button">Выйти</button>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/js.js"></script>
+</body>
+</html>
